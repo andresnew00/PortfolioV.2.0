@@ -65,10 +65,11 @@
     
 //     }(this, this.document));
 
-    $('#check').change(function(){
+    $('#check').on("click", function(){
         if($(this).is(":checked")) {
-            $('full-body').addClass('dark');
+            console.log("Clicked slider!")
+            $('.full-body').addClass('light');
         } else {
-            $('full-body').removeClass('dark');
+          $('.full-body').removeClass('light');
         }
     });

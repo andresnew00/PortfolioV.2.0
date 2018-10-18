@@ -1,12 +1,16 @@
             .full-body {
-                background-image: url("../images/spiration-light.png");
+                background-image: url("../images/spiration dark.png");
                 margin: 0;
             }
-            .container {
+            .carousel-item {
+                max-width: 100%;
+                height: 80%;
+            }
+            .container-fluid {
                 width: 100%;
             }
-            .dark {
-                background-image: url("../images/spiration dark.png");
+            .light {
+                background-image: url("../images/spiration-light.png");
                 margin: 0;
             }
             #portfolio-class, #contact-class {
