@@ -5,23 +5,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Andres Portfolio</title>
-    <!-- resetcss -->
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+
     <!-- icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
+
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
+    <!-- Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
+
+    <!-- custom styles -->
     <link href="css/style.css" rel="stylesheet">
+
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -42,7 +49,10 @@
         </div>
     </div> -->
     <div class="full-body">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+        <!-- navbar -->
+        <div class="container">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+
             <a class="navbar-brand" href="#">Andres Inciarte</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -60,211 +70,228 @@
                         <a class="nav-link" href="#">Contact me</a>
                     </li>
                 </ul>
-
-                <!-- Default unchecked -->
+                <!-- switch -->
                 <label class="bs-switch">
                     <input type="checkbox" id="check" unchecked>
                     <span class="slider round"></span>
                 </label>
-
             </div>
         </nav>
+    </div>
+
         <!-- video -->
         <div class="container-fluid">
             <video autoplay muted loop id="myVideo">
                 <source src="assets/images/Maracaibo desde las alturas.mp4" type="video/mp4">
             </video>
-        </div>
+            <div class="overlay-desc">
+                <h1 id="main-title">Andres Inciarte</h1>
+            </div>
 
 
-        <!-- portfolio -->
-        <div class="container-fluid" id="portfolio-class">
-            <div class="textInfo">
-                <!--Carousel Wrapper-->
-                <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
-                    <!--Indicators-->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-2" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-2" data-slide-to="2"></li>
-                    </ol>
-                    <!--/.Indicators-->
-                    <!--Slides-->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <div class="view">
-                                <img class="d-block w-100" src="assets/images/rsz_psychic2.jpg" alt="First slide">
-                                <div class="mask rgba-black-light"></div>
+            <!-- text under video -->
+            <div class="container about">
+                <h1><strong>About me</strong></h1>
+                <p>Hi! My name is Andres Inciarte, I am a Developer from the Georgia Tech bootcamp, I try to always
+                    learn new things and
+                    as much as I can, I like setting goals, and fighting for them.<p>
+                        <p>I always had the dream of becoming a developer, since I was a kid, the insides of the
+                            computers and programs as well
+                            as videogames called my attention, on 2018 I got the opportunity of joining the bootcamp
+                            program and now I have started on what it still seems to be a dream.<p>
+                                </section>
+            </div>
+
+
+            <!-- portfolio -->
+            <div class="container-fluid" id="portfolio-class">
+                <div class="textInfo">
+                    <!--Carousel Wrapper-->
+                    <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
+                        <!--Indicators-->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-2" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-2" data-slide-to="2"></li>
+                        </ol>
+                        <!--/.Indicators-->
+                        <!--Slides-->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="view">
+                                    <img class="d-block w-100" src="assets/images/rsz_psychic2.jpg" alt="First slide">
+                                    <div class="mask rgba-black-light"></div>
+                                </div>
+                                <div class="carousel-caption">
+                                    <h3 class="h3-responsive">Phychic Game</h3>
+                                    <a href="https://andresnew00.github.io/psychic-game/">begin guessing!</a>
+                                </div>
                             </div>
-                            <div class="carousel-caption">
-                                <h3 class="h3-responsive">Phychic Game</h3>
-                                <a href="https://andresnew00.github.io/psychic-game/">begin guessing!</a>
+                            <div class="carousel-item">
+                                <!--Mask color-->
+                                <div class="view">
+                                    <img class="d-block w-100" src="assets/images/rsz_library.jpg" alt="Second slide">
+                                    <div class="mask rgba-black-light"></div>
+                                </div>
+                                <div class="carousel-caption">
+                                    <h3 class="h3-responsive">XBooks </h3>
+                                    <a href="https://xbooks-gt2018.herokuapp.com/">"save your favorite books!"</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <!--Mask color-->
+                                <div class="view">
+                                    <img class="d-block w-100" src="assets/images/rsz_cards.jpg" alt="Third slide">
+                                    <div class="mask rgba-black-light"></div>
+                                </div>
+                                <div class="carousel-caption">
+                                    <h3 class="h3-responsive">Card Game</h3>
+                                    <a href="https://andresnew00.github.io/unit-4-game/">Draw your Card!</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <!--Mask color-->
+                                <div class="view">
+                                    <img class="d-block w-100" src="assets/images/rsz_trivia1.jpg" alt="Second slide">
+                                    <div class="mask rgba-black-light"></div>
+                                </div>
+                                <div class="carousel-caption">
+                                    <h3 class="h3-responsive">Quiz!</h3>
+                                    <a href="https://andresnew00.github.io/TriviaGame/">Test your Knowledge</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <!--Mask color-->
+                                <div class="view">
+                                    <img class="d-block w-100" src="assets/images/rsz_gifphy.jpg" alt="Second slide">
+                                    <div class="mask rgba-black-light"></div>
+                                </div>
+                                <div class="carousel-caption">
+                                    <h3 class="h3-responsive">Arcade Gifs</h3>
+                                    <a href="https://andresnew00.github.io/giphyapi/">Gifphy!</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <!--Mask color-->
-                            <div class="view">
-                                <img class="d-block w-100" src="assets/images/rsz_rps1.jpg" alt="Second slide">
-                                <div class="mask rgba-black-light"></div>
-                            </div>
-                            <div class="carousel-caption">
-                                <h3 class="h3-responsive">Rock, Paper, Scissors Game </h3>
-                                <a href="">comming soon!</a>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <!--Mask color-->
-                            <div class="view">
-                                <img class="d-block w-100" src="assets/images/rsz_cards.jpg"
-                                    alt="Third slide">
-                                <div class="mask rgba-black-light"></div>
-                            </div>
-                            <div class="carousel-caption">
-                                <h3 class="h3-responsive">Card Game</h3>
-                                <a href="https://andresnew00.github.io/unit-4-game/">Draw your Card!</a>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <!--Mask color-->
-                            <div class="view">
-                                <img class="d-block w-100" src="assets/images/rsz_trivia1.jpg" alt="Second slide">
-                                <div class="mask rgba-black-light"></div>
-                            </div>
-                            <div class="carousel-caption">
-                                <h3 class="h3-responsive">Quiz!</h3>
-                                <a href="https://andresnew00.github.io/TriviaGame/">Test your Knowledge</a>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <!--Mask color-->
-                            <div class="view">
-                                <img class="d-block w-100" src="assets/images/rsz_gifphy.jpg" alt="Second slide">
-                                <div class="mask rgba-black-light"></div>
-                            </div>
-                            <div class="carousel-caption">
-                                <h3 class="h3-responsive">Arcade Gifs</h3>
-                                <a href="https://andresnew00.github.io/giphyapi/">Gifphy!</a>
-                            </div>
-                        </div>
+                        <!--/.Slides-->
+                        <!--Controls-->
+                        <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <!--/.Controls-->
                     </div>
-                    <!--/.Slides-->
-                    <!--Controls-->
-                    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                    <!--/.Controls-->
                 </div>
             </div>
-        </div>
-        <!-- contact me -->
-        <div class="container-fluid" id="contact-class">
-            <div class="contactInfo">
-                <!-- Default form contact -->
-                <form class="text-center border border-light p-5">
+            <!-- contact me -->
+            <div class="container-fluid" id="contact-class">
+                <div class="contactInfo">
+                    <!-- Default form contact -->
+                    <form class="text-center border border-light p-5">
 
-                    <p class="h4 mb-4">Contact</p>
+                        <p class="h4 mb-4">Contact</p>
 
-                    <!-- Name -->
-                    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+                        <!-- Name -->
+                        <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
 
-                    <!-- Email -->
-                    <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+                        <!-- Email -->
+                        <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
 
-                    <!-- Subject -->
-                    <label>Subject</label>
-                    <select class="browser-default custom-select mb-4">
-                        <option value="" disabled>Choose option</option>
-                        <option value="1" selected>Feedback</option>
-                        <option value="2">Report a bug</option>
-                        <option value="3">Feature request</option>
-                        <option value="4">Feature request</option>
-                    </select>
+                        <!-- Subject -->
+                        <label>Subject</label>
+                        <select class="browser-default custom-select mb-4">
+                            <option value="" disabled>Choose option</option>
+                            <option value="1" selected>Feedback</option>
+                            <option value="2">Report a bug</option>
+                            <option value="3">Feature request</option>
+                            <option value="4">Feature request</option>
+                        </select>
 
-                    <!-- Message -->
-                    <div class="form-group">
-                        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
-                    </div>
+                        <!-- Message -->
+                        <div class="form-group">
+                            <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"
+                                placeholder="Message"></textarea>
+                        </div>
 
-                    <!-- Copy -->
-                    <div class="custom-control custom-checkbox mb-4">
-                        <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
-                        <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
-                    </div>
+                        <!-- Copy -->
+                        <div class="custom-control custom-checkbox mb-4">
+                            <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+                            <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this
+                                message</label>
+                        </div>
 
-                    <!-- Send button -->
-                    <button class="btn btn-info btn-block" type="submit">Send</button>
+                        <!-- Send button -->
+                        <button class="btn btn-info btn-block" type="submit">Send</button>
 
-                </form>
-                <!-- Default form contact -->
+                    </form>
+                    <!-- Default form contact -->
+                </div>
             </div>
-        </div>
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Footer -->
-    <footer class="page-footer font-small special-color-dark pt-4 ">
-        <!-- Footer Elements -->
-        <div class="container">
-            <!-- Social buttons -->
-            <ul class="list-unstyled list-inline text-center">
-                <li class="list-inline-item">
-                    <a href="https://github.com/" class="btn-floating btn-fb mx-1">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="btn-floating btn-tw mx-1">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://www.linkedin.com/in/andres-inciarte-973b13101/" class="btn-floating btn-gplus mx-1">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-            </ul>
-            <!-- Social buttons -->
 
         </div>
-        <!-- Footer Elements -->
-
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2018 Copyright
-        </div>
-        <!-- Copyright -->
-
-    </footer>
 
 
-    <!-- javascript -->
-    <script src="assets/js/app.js"></script>
 
 
-    <!-- mdbootstrap -->
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+        <!-- Footer -->
+        <footer class="page-footer font-small special-color-dark pt-4 ">
+            <!-- Footer Elements -->
+            <div class="container">
+                <!-- Social buttons -->
+                <ul class="list-unstyled list-inline text-center">
+                    <li class="list-inline-item">
+                        <a href="https://github.com/" class="btn-floating btn-fb mx-1">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-tw mx-1">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/andres-inciarte-973b13101/" class="btn-floating btn-gplus mx-1">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                </ul>
+                <!-- Social buttons -->
+
+            </div>
+            <!-- Footer Elements -->
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2018 Copyright
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+
+
+        <!-- javascript -->
+        <script src="assets/js/app.js"></script>
+
+
+        <!-- mdbootstrap -->
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
 
 
 </body>
